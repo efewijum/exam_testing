@@ -15,5 +15,5 @@ RUN echo "su -l -c  'vncserver :2000 -geometry 1280x800' "  >>/dockertest.sh
 RUN echo 'cd /noVNC-1.2.0' >>/dockertest.sh
 RUN echo './utils/launch.sh  --vnc localhost:7900 --listen 8900 ' >>/dockertest.sh
 RUN chmod 755 /dockertest.sh
-EXPOSE 9900
+EXPOSE 8900
 CMD  /dockertest.sh
